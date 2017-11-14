@@ -1,4 +1,18 @@
-<a href="add.php">添加文章</a>
+<span>
+    <?php
+        if($_COOKIE['uid']){
+            echo $_COOKIE['uname']." 已登录 ";
+            echo "<a href='ulogin.php'>注销登录</a>";
+        }else{
+            echo "<a href='login.php'>未登录</a>";
+        }
+    ?>
+</span> <br/>
+<a href="add.php">添加文章</a> <br/>
+<form action="index.php" method="post">
+    <input type="text" name="search">
+    <input type="submit" name="sub" value="搜索">
+</form>
 <?php
 /**
  * Created by PhpStorm.
@@ -7,7 +21,14 @@
  * Time: 15:23
  */
     include "conn.php";
-    $sql="select * from blog order by bid desc";
+    if(isset($_POST['search'])){
+        $search=$_POST['search'];
+        $w="title like '%$search%'";
+    }else{
+        $w=1;
+    }
+
+    $sql="select * from blog where $w order by bid desc";
     $query=mysqli_query($link,$sql);
     while($arr=mysqli_fetch_array($query)) {
 ?>
