@@ -23,8 +23,11 @@
     }
 ?>
 <meta charset="utf-8">
+<link rel="stylesheet" href="common.css">
 <form action="add.php" method="post">
     标题: <input type="text" name="title"> <br/>
+    <br>
     内容: <textarea name="con" cols="20" rows="10"></textarea> <br>
+    <br>
     <input type="submit" name="sub" value="添加文章">
 </form>

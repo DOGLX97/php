@@ -1,3 +1,4 @@
+<h1>welcome to my blog</h1>
 <span>
     <?php
         if($_COOKIE['uid']){
@@ -7,7 +8,9 @@
             echo "<a href='login.php'>未登录</a>";
         }
     ?>
-</span> <br/>
+</span>
+<span><a href="reg.php">注册</a></span>
+<br/>
 <a href="add.php">添加文章</a> <br/>
 <form action="index.php" method="post">
     <input type="text" name="search">
@@ -39,3 +42,17 @@
 <?php
     }
 ?>
+<style>
+body{
+    background:#e77166;
+    color:#fff;
+}
+h1{
+    background:#323134;
+    text-align:center;
+    padding:10px;
+}
+a:hover,a:link,a:active,a:visited{
+    color:#fff;
+}
+</style>

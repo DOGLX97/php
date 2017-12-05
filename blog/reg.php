@@ -44,8 +44,11 @@
     }
 ?>
 <meta charset="utf-8">
+<link rel="stylesheet" href="common.css">
 <form action="reg.php" method="post">
     用户名: <input type="text" name="uname"> <br>
+    <br>
     密码: <input type="password" name="pass"> <br>
+    <br>
     <input type="submit" name="sub" value="注册">
 </form>

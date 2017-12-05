@@ -22,8 +22,12 @@
     }
 ?>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="common.css">
 <form action="login.php" method="post">
     用户名: <input type="text" name="uname"> <br>
-    密码: <input type="password" name="pass"> <br>
+    <br>
+    密 码: <input type="password" name="pass"> <br>
+    <br>
     <input type="submit" name="sub" value="登录">
 </form>
+

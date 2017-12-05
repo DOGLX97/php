@@ -19,8 +19,19 @@
         }
     }
 ?>
+<h2>内容</h2>
 <h3><?php echo $arr['title']?></h3>
-<span><?php echo $arr['time']?></span>
+<span>时间:<?php echo $arr['time']?></span>
 <span>访问量:<?php echo $arr['hits']?></span>
+<hr>
 <p><?php echo $arr['content']?></p>
-
+<style>
+body{
+    background:#e77166;
+    color:#fff;
+}
+h2{
+    background:#323134;
+    text-align:center;
+}
+</style>
