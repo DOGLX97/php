@@ -5,13 +5,21 @@
             echo $_COOKIE['uname']." 已登录 ";
             echo "<a href='ulogin.php'>注销登录</a>";
         }else{
-            echo "<a href='login.php'>未登录</a>";
+            echo "<a href='login.php'>登录</a>";
         }
     ?>
 </span>
 <span><a href="reg.php">注册</a></span>
 <br/>
-<a href="add.php">添加文章</a> <br/>
+
+<?php
+    if($_COOKIE['uid']){
+        echo "<a href='add.php'>添加文章</a>";
+    }else{
+        echo "<a href='login.php'>添加文章(请先登录)</a>";
+    }
+?>
+<br/>
 <form action="index.php" method="post">
     <input type="text" name="search">
     <input type="submit" name="sub" value="搜索">

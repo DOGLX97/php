@@ -23,11 +23,18 @@
 ?>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="common.css">
+<style>
+a{
+    color:#000;
+    text-decoration:none;
+}
+</style>
 <form action="login.php" method="post">
-    用户名: <input type="text" name="uname"> <br>
+    用户名: <input type="text" name="uname" > <br>
     <br>
     密 码: <input type="password" name="pass"> <br>
     <br>
     <input type="submit" name="sub" value="登录">
+    <button><a href="reg.php">注册</a></button>
 </form>
 
