@@ -44,7 +44,7 @@
     }
 ?>
 <meta charset="utf-8">
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="css/common.css">
 <form action="reg.php" method="post">
     用户名: <input type="text" name="uname"> <br>
     <br>

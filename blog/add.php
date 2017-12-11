@@ -23,7 +23,7 @@
     }
 ?>
 <meta charset="utf-8">
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="css/common.css">
 <form action="add.php" method="post">
     标题: <input type="text" name="title"> <br/>
     <br>

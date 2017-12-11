@@ -1,7 +1,7 @@
 <table border="1" width="500" align="center">
     <tr>
         <th>ID</th>
-        <th>NAME</th>
+        <th>Title</th>
     </tr>
 <?php
 /**
@@ -31,13 +31,13 @@
     $pagenum=10;//每页显示多少条
     $showpage=5;//展示页数
     $pageoffset=($showpage-1)/2;//偏移量
-    $sql="select * from fenye limit ".($page-1)*$pagenum.",$pagenum";
+    $sql="select * from blog limit ".($page-1)*$pagenum.",$pagenum";
     $query=mysqli_query($link,$sql);
     while($arr=mysqli_fetch_array($query)){
 ?>
     <tr>
-        <td><?php echo $arr['fid'];?></td>
-        <td><?php echo $arr['fname'];?></td>
+        <td><?php echo $arr['bid'];?></td>
+        <td><?php echo $arr['title'];?></td>
     </tr>
 <?php
     }
@@ -45,7 +45,7 @@
     <tr>
         <td colspan="2">
             <?php
-                $sql="select count(*) from fenye";
+                $sql="select count(*) from blog";
                 $query=mysqli_query($link,$sql);
                 $arr=mysqli_fetch_array($query);
                 $all=$arr[0];//总条数

@@ -28,7 +28,7 @@
     }
 ?>
 <meta charset="utf-8">
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="css/common.css">
 <form action="edit.php" method="post">
     <input type="hidden" name="hid" value="<?php echo $arr['bid'];?>">
     标题: <input type="text" name="title" value="<?php echo $arr['title'];?>"><br/>

@@ -19,19 +19,50 @@
         }
     }
 ?>
-<h2>内容</h2>
-<h3><?php echo $arr['title']?></h3>
-<span>时间:<?php echo $arr['time']?></span>
-<span>访问量:<?php echo $arr['hits']?></span>
-<hr>
-<p><?php echo $arr['content']?></p>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<div class="container">
+    <h2>内容</h2>
+    <h3><?php echo $arr['title']?></h3>
+    <span>时间:<?php echo $arr['time']?></span>
+    <span>访问量:<?php echo $arr['hits']?></span>
+    <hr>
+    <p><?php echo $arr['content']?></p>
+    <hr>
+    <div class="row" class="pl">
+        <div class="col-md-7">
+            <ul class="list-group">
+                <li class="list-group-item">评论5</li>
+                <li class="list-group-item">评论4</li>
+                <li class="list-group-item">评论3</li>
+                <li class="list-group-item">评论2</li>
+                <li class="list-group-item">评论1</li>
+            </ul>
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">评论面板</div>
+                <div class="panel-body">
+                <form>
+                    <textarea name="plcon" id="" cols="30" rows="5"></textarea>
+                    <input type="submit" name="sub" value="添加评论" />
+                </form>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
 <style>
 body{
     background:#e77166;
-    color:#fff;
 }
 h2{
     background:#323134;
     text-align:center;
+    color:#fff;
+}
+.container .pl{
+    color:#000;
 }
 </style>
