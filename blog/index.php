@@ -24,12 +24,12 @@
     }
     ?>
     </div>
-    <div class="col-xs-6 col-xs-offset-6">
+    <!-- <div class="col-xs-6 col-xs-offset-6">
         <form action="index.php" method="post">
             <input type="text" name="search">
             <input type="submit" name="sub" value="搜索" class="search">
         </form>
-    </div>
+    </div> -->
 </div>
 <ul>
 

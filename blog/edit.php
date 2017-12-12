@@ -1,10 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2017/11/13
- * Time: 15:38
- */
+    if(!$_COOKIE['uid']){
+        header('location:login.php');
+    }
     include "conn.php";
     if(isset($_GET['bid'])){
         $bid=$_GET['bid'];
