@@ -1,5 +1,35 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="assets/bootstrap.min.css">
+<style>
+body{
+    background:#e77166;
+    color:#fff;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+h1{
+    background:#323134;
+    text-align:center;
+    padding:10px;
+}
+a:hover,a:link,a:active,a:visited{
+    color:#fff;
+}
+p{
+    margin:0;
+    padding:0;
+}
+.fenye{
+    text-align:center;
+    margin:20px;
+}
+.search{
+    color:#323134;
+}
+</style>
 <div class="container">
 <h1>welcome to my blog</h1>
 <div class="row">
@@ -125,33 +155,3 @@
     </li>
 </ul>
 </div>
-<style>
-body{
-    background:#e77166;
-    color:#fff;
-}
-ul{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-h1{
-    background:#323134;
-    text-align:center;
-    padding:10px;
-}
-a:hover,a:link,a:active,a:visited{
-    color:#fff;
-}
-p{
-    margin:0;
-    padding:0;
-}
-.fenye{
-    text-align:center;
-    margin:20px;
-}
-.search{
-    color:#323134;
-}
-</style>

@@ -7,6 +7,22 @@
 ?>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="assets/bootstrap.min.css">
+<style>
+body{
+    background:#e77166;
+}
+h2{
+    background:#323134;
+    text-align:center;
+    color:#fff;
+}
+.container .pl{
+    color:#000;
+}
+.pl-info{
+    float:right;
+}
+</style>
 <?php
     include "conn.php";
     if(isset($_GET['bid'])){
@@ -72,19 +88,4 @@
         $query=mysqli_query($link,$sql);
     }
 ?>
-<style>
-body{
-    background:#e77166;
-}
-h2{
-    background:#323134;
-    text-align:center;
-    color:#fff;
-}
-.container .pl{
-    color:#000;
-}
-.pl-info{
-    float:right;
-}
-</style>
+
